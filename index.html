@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <section class="section__header">
+            <img src="./images/Logo.png" alt="logo inicial de alura" class="logo__header">
+        </section>
+    </header>
+    <main>
+        <section class="main">
+            <section class="main__section_left ajustar">
+                <textarea id="ingresoTexto" class="main__section_left_textarea" name="" id="" class="textarea__main" placeholder="Ingrese texto aqui"></textarea>
+                <section class="main__section_left_text">
+                    <img src="./images/alerta.png" alt="">
+                    <span class="span_class">Solo letras minúsculas y sin acentos</span>
+                    <section class="main__section_left_button">
+                        <button id="botonEncriptar" class="button_encriptar">Encriptar</button>
+                        <button id="botonDesencriptar" class="button_desencriptar">Desencriptar</button>
+                    </section>
+                    </section>                
+                </section>
+            <section id="mainSectionRigth" class="main__section_rigth">
+                <img id="muneco" class="muneco" src="./images/Muñeco.png" alt="">
+                <textarea id="mensajeFinal" class="end_message ajustar" placeholder="Ningún mensaje fue encontrado"></textarea>
+                <p id="otherMessage" class="other_message">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <button id="botonCopiar" class="copy_button oculto">Copiar</button>
+            </section> 
+        </section>
+    </main>
+    <footer>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>

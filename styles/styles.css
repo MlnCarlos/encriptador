@@ -1,0 +1,169 @@
+:root{
+    --color-blue:#0A3871;
+    --color-white: #FFFFFF;
+    --color-gray: #D8DFE8;
+    --color-darkgray: #495057;
+    --color-back: #F3F5FC;
+}
+body{
+    font-family: "Inter", sans-serif;
+    background-color: var(--color-back);
+}
+/*CSS HEADER*/
+.section__header{
+    width: 90%;
+    margin: auto;    
+}
+.logo__header{
+    margin-top: 2.5rem;
+}
+.main{
+    width: 80.5%;
+    margin: auto 2.5rem auto auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    min-height: calc(100vh - 5.688rem - 4.5rem);
+    align-items: end;
+}
+/*CSS MAIN*/
+.main__section_left{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.main__section_left_textarea{
+    border: none;
+    width: 80%;
+    font-size: 2rem;
+    color: var(--color-blue);
+    background: none;
+    outline: none;
+    resize: none;
+    font-family: "Inter", sans-serif;
+}
+.main__section_left_textarea::placeholder{
+    color: var(--color-blue);
+}
+.main__section_left_button{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+.span_class{
+    font-size: 0.75rem;
+    color: var(--color-darkgray);
+}
+.button_encriptar,
+.button_desencriptar,
+.copy_button{
+    border: 1px solid var(--color-blue);
+    cursor: pointer;
+    max-width: 20.5rem;
+    min-width: 10rem;
+    width: 40%;
+    height: 4.188rem;
+    font-size: 1rem;
+    border-radius: 1.5rem;
+}
+.button_encriptar{
+    background-color: var(--color-blue);
+    color: var(--color-white);
+}
+.button_desencriptar{
+    background-color: var(--color-gray);
+    color: var(--color-blue);
+}
+.main__section_rigth{
+    background-color: var(--color-white);
+    height: calc(100% + 48px);
+    border-radius: 2rem;
+    padding: 2rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    box-shadow: 0px 24px 32px -8px #00000014;
+
+}
+.main__section_rigth.ajustar{
+    justify-content: space-between;
+}
+.muneco{
+    width: 100%;
+}
+.oculto{
+    display: none;
+}
+.end_message{
+    background: none;
+    border: none;
+    outline: none;
+    resize: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--color-blue);
+}
+.end_message.ajustar{
+    text-align: left;
+    font-weight: lighter;
+    height: 80%;
+    color: var(--color-blue);
+}
+.other_message{
+    color: var(--color-darkgray);
+    font-size: 1rem;
+    text-align: center;
+}
+.copy_button{
+    width: 100%;
+    background-color: transparent;
+    color: var(--color-blue);
+    height: 4.188rem;
+    display: none;
+}
+
+
+
+
+/* footer{
+    height: 3.125rem;
+    background-color: crimson;
+} */
+@media screen and (max-width: 800px) {
+    .main{
+        grid-template-columns: 1fr;
+        grid-template-rows: 75% auto;
+        width: auto;
+        margin: auto 2.5rem;
+    }
+    .main__section_left_button{
+        justify-content: center;
+    }
+    .button_encriptar,
+    .button_desencriptar{
+        width: 50%;
+    }
+    .main__section_rigth{
+        height: 100%;
+    }
+    .muneco{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main{
+        margin: auto 1rem;
+    }
+    .button_encriptar,
+    .button_desencriptar,
+    .copy_button{
+        max-width: 100%;
+        width: 100%;
+    }
+}
